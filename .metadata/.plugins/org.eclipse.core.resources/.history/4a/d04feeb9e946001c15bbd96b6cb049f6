@@ -1,0 +1,12 @@
+package org.zerock.domain;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+
+public class votest {
+	private int x;
+	private int y;
+}

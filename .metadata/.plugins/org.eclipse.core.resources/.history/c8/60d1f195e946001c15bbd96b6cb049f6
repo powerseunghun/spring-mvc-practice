@@ -1,0 +1,6 @@
+package org.zerock.domain;
+
+public class votest {
+	private int x;
+	private int y;
+}
