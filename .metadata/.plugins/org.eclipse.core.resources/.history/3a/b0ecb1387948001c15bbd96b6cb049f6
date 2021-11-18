@@ -1,0 +1,10 @@
+package org.zerock.sample;
+
+import org.springframework.context.annotation.ComponentScan;
+
+@ComponentScan
+public class SampleHotel {
+	public static void main(String[] args) {
+		
+	}
+}

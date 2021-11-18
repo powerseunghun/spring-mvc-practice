@@ -1,0 +1,17 @@
+package org.zerock.sample;
+
+import org.springframework.context.annotation.ComponentScan;
+
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@ComponentScan
+@Data
+@NoArgsConstructor
+public class SampleHotel {
+	private Chef chef;
+	
+	public SampleHotel(Chef chef) {
+		this.chef = chef;
+	}
+}
