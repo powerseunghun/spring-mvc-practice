@@ -1,0 +1,7 @@
+package org.zerock.persistence;
+
+public class JDBCTests {
+	public static void main(String[] args) {
+		
+	}
+}
