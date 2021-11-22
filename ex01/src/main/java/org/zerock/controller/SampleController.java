@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.zerock.domain.SampleDTO;
 
 import lombok.extern.slf4j.Slf4j;
@@ -33,5 +34,13 @@ public class SampleController {
 		log.info("" + dto);
 		
 		return "ex01";
+	}
+	
+	@GetMapping("/ex02")
+	public String ex02(@RequestParam("name") String name, @RequestParam("age")int age) {
+		log.info("name : " + name);
+		log.info("ages : " + age);
+		
+		return "ex02";
 	}
 }
