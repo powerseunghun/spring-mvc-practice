@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+/Users/anseunghun/Documents/spring-practice-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2312218099.index
+/ex02/src/main/java
 /Users/anseunghun/Documents/spring-practice-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2436582989.index
 /ex01/src/main/java
 /Users/anseunghun/Documents/spring-practice-workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2600049792.index
