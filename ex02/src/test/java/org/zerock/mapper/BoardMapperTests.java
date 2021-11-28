@@ -3,7 +3,6 @@ package org.zerock.mapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.CommandLinePropertySource;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.zerock.domain.BoardVO;
@@ -51,10 +50,28 @@ public class BoardMapperTests {
 		log.info(board+"");
 	}
 	
-	@Test
+//	@Test
 	public void testRead() {
 		BoardVO board = mapper.read(7L);
 		
 		log.info(board + "");
+	}
+	
+//	@Test
+	public void testDelete() {
+		log.info("DELETE COUNT : " + mapper.delete(3L));
+	}
+	
+	@Test
+	public void testUpdate() {
+		BoardVO board = new BoardVO();
+		
+		board.setBno(5L);
+		board.setTitle("update Title");
+		board.setContent("update Content");
+		board.setWriter("update user00");
+		
+		int count = mapper.update(board);
+		log.info("UPDATE COUNT : " + count);
 	}
 }
