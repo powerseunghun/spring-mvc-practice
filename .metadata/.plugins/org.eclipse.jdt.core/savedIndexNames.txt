@@ -4,7 +4,6 @@ INDEX VERSION 1.131+/Users/anseunghun/Documents/spring-practice-workspace/.metad
 165578995.index
 135405558.index
 2062084286.index
-3292010082.index
 3406754905.index
 708212558.index
 426734991.index
