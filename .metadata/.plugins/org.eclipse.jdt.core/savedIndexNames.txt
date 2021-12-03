@@ -1,12 +1,3 @@
 INDEX VERSION 1.131+/Users/anseunghun/Documents/spring-practice-workspace/.metadata/.plugins/org.eclipse.jdt.core
-1563510744.index
-1405248780.index
-165578995.index
-135405558.index
-2062084286.index
-3292010082.index
-3406754905.index
 708212558.index
-426734991.index
-2337948109.index
 2694098535.index

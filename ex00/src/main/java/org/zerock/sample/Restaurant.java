@@ -11,4 +11,7 @@ import lombok.Setter;
 public class Restaurant {
 	@Setter(onMethod_ = @Autowired)
 	private Chef chef;
+	
+//	@Autowired;
+//	private Chef chef;
 }

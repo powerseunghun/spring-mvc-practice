@@ -13,38 +13,29 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.zerock.config.RootConfig;
 
 import lombok.Setter;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {RootConfig.class})
-@Log4j
+@ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
+@Slf4j
 public class DataSourceTests {
-	@Setter(onMethod_ = {@Autowired})
+	@Setter(onMethod_ = @Autowired)
 	private DataSource dataSource;
 	
-	@Setter(onMethod_ = {@Autowired})
+	@Setter(onMethod_= @Autowired)
 	private SqlSessionFactory sqlSessionFactory;
 	
-//	@Test
+	@Test
 	public void testConnection() {
-		try(Connection con = dataSource.getConnection()) {
-			log.info(con);
+		try(	SqlSession session = sqlSessionFactory.openSession();
+				Connection con = dataSource.getConnection()) {
+			log.info(session.toString());
+			log.info(con.toString());
 		} catch(Exception e) {
 			fail(e.getMessage());
 		}
 	}
 	
-	@Test
-	public void testMyBatis() {
-		try(SqlSession session = sqlSessionFactory.openSession(); 
-				Connection con = session.getConnection();) {
-			log.info(session);
-			log.info(con);
-		} catch(Exception e) {
-			fail(e.getMessage());
-		}
-	}
 }
