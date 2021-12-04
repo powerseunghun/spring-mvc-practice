@@ -8,4 +8,6 @@ INDEX VERSION 1.4+/Users/anseunghun/Documents/spring-practice-workspace/.metadat
 2600049792.index
 2436582989.index
 708212558.index
+2600049792.index
+2436582989.index
 2485023825.index
