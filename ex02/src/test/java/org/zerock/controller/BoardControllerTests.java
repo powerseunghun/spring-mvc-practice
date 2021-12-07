@@ -33,7 +33,7 @@ public class BoardControllerTests {
 		this.mockMvc = MockMvcBuilders.webAppContextSetup(ctx).build();
 	}
 	
-//	@Test
+	@Test
 	public void testList() throws Exception {
 		log.info(
 			mockMvc.perform(MockMvcRequestBuilders.get("/board/list"))
@@ -76,7 +76,7 @@ public class BoardControllerTests {
 		log.info(resultPage);
 	}
 	
-	@Test
+//	@Test
 	public void testRemove() throws Exception {
 		String resultPage = mockMvc.perform(MockMvcRequestBuilders
 				.post("/board/remove")
