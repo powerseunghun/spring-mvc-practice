@@ -89,6 +89,7 @@
 	<select id="getTotalCount" resultType="int">
 		SELECT COUNT(*) FROM TBL_BOARD WHERE 
 		<include refid="criteria"></include>
+		BNO > 0
 	</select>
 	
 	<insert id="insert">
